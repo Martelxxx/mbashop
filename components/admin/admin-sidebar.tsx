@@ -23,6 +23,7 @@ import {
   Navigation,
   Clock,
   LogOut,
+  BookOpen,
 } from "lucide-react"
 
 interface SidebarProps extends React.HTMLAttributes<HTMLDivElement> {}
@@ -91,6 +92,13 @@ export default function AdminSidebar({ className }: SidebarProps) {
               icon={<Users className="h-5 w-5" />}
               label="Customers"
               isActive={pathname.startsWith("/admin/customers")}
+              isCollapsed={isCollapsed}
+            />
+            <NavItem
+              href="/admin/blog"
+              icon={<BookOpen className="h-5 w-5" />}
+              label="Blog"
+              isActive={pathname.startsWith("/admin/blog")}
               isCollapsed={isCollapsed}
             />
             <NavItem

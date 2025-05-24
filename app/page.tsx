@@ -10,6 +10,7 @@ import TestimonialCarousel from "@/components/testimonial-carousel"
 import CategoryGrid from "@/components/category-grid"
 import DealOfTheDay from "@/components/deal-of-the-day"
 import { getFeaturedProducts } from "@/lib/products"
+import FeaturedBlog from "@/components/featured-blog"
 
 export const metadata: Metadata = {
   title: "MBA Boutique | Shopping Fiable & Rapide au Sénégal",
@@ -157,6 +158,9 @@ export default async function Home() {
           </Button>
         </div>
       </section>
+
+      {/* Featured Blog */}
+      <FeaturedBlog />
 
       {/* AdSense Section */}
       <section className="py-8 container mx-auto px-4">
